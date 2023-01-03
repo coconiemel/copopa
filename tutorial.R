@@ -40,3 +40,23 @@ check()
 use_mit_license()
 
 document()
+
+?check_type
+?save_to_csv_rds
+
+check()
+
+install()
+
+library(copopa)
+
+test <- data.frame(col1 = c("a", "b", "c"), col2 = c("d", "e", "f"))
+check_type(test)
+save_to_csv_rds(test, "test")\
+
+use_testthat()
+
+use_test("check_type")
+use_test("save_to_csv_rds")
+
+test()
