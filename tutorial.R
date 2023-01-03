@@ -17,7 +17,7 @@ save_function <- function(df, output_name, rownames = FALSE){
 }
 
 use_r("check_function")
-use_r("save_fucntion")
+use_r("save_function")
 
 load_all()
 
