@@ -1,4 +1,5 @@
 library(devtools)
+library(utils)
 
 use_git()
 
@@ -21,16 +22,18 @@ use_r("save_function")
 
 load_all()
 
+check_function(test)
+save_function(test, test)
+
 # Create test dataframe
 Name <- c("Jon", "Bill", "Maria", "Ben", "Tina")
 Age <- c(23, 41, 32, 58, 26)
-test <- data.frame(Name, Age)
+Gender <- c("M", "M", "F", "M", "F")
+test <- data.frame(Name, Age, Gender)
 
 exists("check_function", where = globalenv(), inherits = FALSE)
 exists("save_function", where = globalenv(), inherits = FALSE)
 
-rm(list = ls())
-
-load_all()
+check()
 
 
