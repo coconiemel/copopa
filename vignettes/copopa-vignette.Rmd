@@ -1,5 +1,7 @@
 ---
 title: "copopa-vignette"
+description: >
+  This vignette will explain the copopa package.
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{copopa-vignette}
@@ -17,3 +19,11 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(copopa)
 ```
+
+The package does two things:
+* It makes checking datatypes on data with a lot of values quick.
+* It easily saves a dataframe into two different files, CSV and RDS.
+
+Checking datatypes is done by the "check_type(x)" function. Enter target data as x and you'll receive a list of types per value.
+
+Saving your dataframe is done by the "save_to _csv_rds(df, output_name, rownames = ...)". It requires you to enter the target dataframe, the names of the output new files and to render rownames or not (TRUE or FALSE).
