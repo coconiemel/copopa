@@ -6,8 +6,8 @@
 #' @export
 #'
 #' @examples
-#' test <- c("A", "B", "C")
-#' check_function(test)
+#' test1 <- c("a", "b", "c")
+#' check_function(test1)
 check_function <- function(x) {
   # Function to check the class type of data "x"
   class_result <- class(x)
