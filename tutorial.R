@@ -1,5 +1,6 @@
 library(devtools)
 library(utils)
+library(roxygen2)
 
 use_git()
 
@@ -36,4 +37,6 @@ exists("save_function", where = globalenv(), inherits = FALSE)
 
 check()
 
+use_mit_license()
 
+document()
