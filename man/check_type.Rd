@@ -7,7 +7,7 @@
 check_type(x)
 }
 \arguments{
-\item{data}{that needs to be checked for type}
+\item{x}{that needs to be checked for type}
 }
 \value{
 a list

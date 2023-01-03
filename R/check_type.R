@@ -1,6 +1,6 @@
 #' check_type
 #'
-#' @param data that needs to be checked for type
+#' @param x that needs to be checked for type
 #'
 #' @return a list
 #' @export
