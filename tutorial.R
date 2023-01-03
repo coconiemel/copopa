@@ -60,3 +60,9 @@ use_test("check_type")
 use_test("save_to_csv_rds")
 
 test()
+
+use_package("utils")
+
+use_readme_rmd()
+
+build_readme()
