@@ -35,12 +35,17 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(copopa)
+
 ## basic example code for check_type
 test1 <- c("a", "b", "c")
 check_type(test1)
+
 ## basic example code for save_to_csv_rds
 test2 <- data.frame(col1 = c("a", "b", "c"), col2 = c("d", "e", "f"))
 save_to_csv_rds(test2, "test2")
 ```
 
+## Note
+
+Note that with the check_type() function a column also needs to be defined, due to the simplicity of the example this is not possible in the example. So your code will look like check_type(example$column).
 

@@ -36,3 +36,9 @@ check_type(test1)
 test2 <- data.frame(col1 = c("a", "b", "c"), col2 = c("d", "e", "f"))
 save_to_csv_rds(test2, "test2")
 ```
+
+## Note
+
+Note that with the check_type() function a column also needs to be
+defined, due to the simplicity of the example this is not possible in
+the example. So your code will look like check_type(example\$column).
