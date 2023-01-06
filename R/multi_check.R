@@ -1,4 +1,4 @@
-#' Multi check
+#' Class check of multiple datasets
 #'
 #' @param x data$column of first set, column can be left out
 #' @param y data$column of second set, column can be left out

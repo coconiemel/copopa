@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Coco", "Niemel", , "cocojn@hotmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: The package checks the type of data and saves them in CSV and RSD files.
+Description: The package has four function to enhance my portfolio
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -15,5 +15,6 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
+    stats,
     utils
 VignetteBuilder: knitr

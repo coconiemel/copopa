@@ -2,7 +2,7 @@
 % Please edit documentation in R/save_to_csv_rds.R
 \name{save_to_csv_rds}
 \alias{save_to_csv_rds}
-\title{save_to_csv_rds}
+\title{Save data to both CSV and RDS files}
 \usage{
 save_to_csv_rds(df, output_name, rownames = FALSE)
 }
@@ -17,7 +17,7 @@ save_to_csv_rds(df, output_name, rownames = FALSE)
 CSV and RDS
 }
 \description{
-save_to_csv_rds
+Save data to both CSV and RDS files
 }
 \examples{
 test2 <- data.frame(col1 = c("a", "b", "c"), col2 = c("d", "e", "f"))

@@ -1,6 +1,6 @@
-#' Mean and standard deviation
+#' Calculating mean and standard deviation
 #'
-#' @param df
+#' @param df data frame for calculating the mean and the standard deviation
 #'
 #' @return a list
 #' @export
