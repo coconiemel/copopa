@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Coco", "Niemel", , "cocojn@hotmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: The package has four function to enhance my portfolio
+Description: The package has four functions to enhance my portfolio.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

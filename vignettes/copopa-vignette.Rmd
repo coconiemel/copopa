@@ -20,10 +20,16 @@ knitr::opts_chunk$set(
 library(copopa)
 ```
 
-The package does two things:
-* It makes checking datatypes on a column in your data with a lot of values quick.
+The package does four things:
+* It makes checking types of multiple datasets quick.
 * It easily saves a dataframe into two different files, CSV and RDS.
+* It simultaniously calculates the minimum and maximum.
+* It simultaniously calculates the mean and standard deviation.
 
-Checking datatypes is done by the "check_type(x)" function. Enter target data and column as x and you'll receive a list of types per value.
+Checking datatypes is done by the "multi_check(x, y, z)" function. Enter target data (and column) as x, y and z and you'll receive a list of types per dataset.
 
 Saving your dataframe is done by the "save_to _csv_rds(df, output_name, rownames = ...)". It requires you to enter the target dataframe, the names of the output new files and to render rownames or not (TRUE or FALSE).
+
+Calculating the minimum and maximum is done by the "mima(df) function. Just enter target data en you'll receive a list.
+
+Calculating the mean and standard deviation is done by the "mean_sd(df) function. Just enter target data en you'll receive a list.

@@ -20,6 +20,6 @@ CSV and RDS
 Save data to both CSV and RDS files
 }
 \examples{
-test2 <- data.frame(col1 = c("a", "b", "c"), col2 = c("d", "e", "f"))
-save_to_csv_rds(test2, "test2")
+test1 <- data.frame(col1 = c("a", "b", "c"), col2 = c("d", "e", "f"))
+save_to_csv_rds(test1, "test1")
 }

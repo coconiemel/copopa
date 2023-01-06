@@ -16,6 +16,6 @@ a list
 Calculating minimum and maximum value
 }
 \examples{
-test3 <- c("1", "2", "3", "4")
-mima(test3)
+test2 <- c("1", "2", "3", "4")
+mima(test2)
 }

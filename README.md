@@ -6,8 +6,10 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of copopa is to check the type of data and to save dataframes
-into CSV and RDS files.
+The goal of copopa is to easily calculate the minimum and maximum of
+data, calculate the mean and standard deviation of data, to check the
+class of multiple datasets at once and to save dataframes into CSV and
+RDS files.
 
 ## Installation
 
@@ -25,20 +27,39 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(copopa)
+## basic example code for save_to_csv_rds function
+test1 <- data.frame(col1 = c("a", "b", "c"), col2 = c("d", "e", "f"))
+save_to_csv_rds(test1, "test1")
 
-## basic example code for check_type
-test1 <- c("a", "b", "c")
-check_type(test1)
-#> [1] "the class of a is character" "the class of b is character"
-#> [3] "the class of c is character"
+## basic example code for mima function
+test2 <- c("1", "2", "3", "4")
+mima(test2)
+#> $min
+#> [1] "1"
+#> 
+#> $max
+#> [1] "4"
 
-## basic example code for save_to_csv_rds
-test2 <- data.frame(col1 = c("a", "b", "c"), col2 = c("d", "e", "f"))
-save_to_csv_rds(test2, "test2")
+## basic example code for multi_check function
+test3a <- data.frame(col1 = c("1", "2", "3"), col2 = c("a", "b", "c"))
+test3b <- c("4", "5", "6")
+multi_check(test3a$col1, test3a$col2, test3b)
+#> [[1]]
+#> [1] "character"
+#> 
+#> [[2]]
+#> [1] "character"
+#> 
+#> [[3]]
+#> [1] "character"
+
+## basic exampel code for mean_sd function
+test4 <- c("1", "2", "3")
+mean_sd(test4)
+#> Warning in mean.default(df): argument is not numeric or logical: returning NA
+#> $mean
+#> [1] NA
+#> 
+#> $sd
+#> [1] 1
 ```
-
-## Note
-
-Note that with the check_type() function a column also needs to be
-defined, due to the simplicity of the example this is not possible in
-the example. So your code will look like check_type(example\$column).
