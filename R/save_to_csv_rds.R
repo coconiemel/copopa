@@ -1,4 +1,4 @@
-#' save_to_csv_rds
+#' Save data to CSV and RDS
 #'
 #' @param df dataframe to save as CSV and RDS
 #' @param output_name name of output file and location
@@ -16,3 +16,4 @@ save_to_csv_rds <- function(df, output_name, rownames = FALSE){
   write.csv(df, paste0(output_name, ".csv"), row.names = rownames)
   saveRDS(df, file=paste0(output_name, ".rds"))
 }
+

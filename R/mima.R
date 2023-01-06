@@ -1,4 +1,4 @@
-#' Title
+#' Minimum and maximum
 #'
 #' @param df
 #'
