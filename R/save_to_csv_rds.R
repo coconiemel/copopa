@@ -2,7 +2,6 @@
 #'
 #' @param df dataframe to save as CSV and RDS
 #' @param output_name name of output file and location
-#' @param rownames rownames TRUE or FALSE
 #'
 #' @return CSV and RDS
 #' @export
@@ -14,9 +13,9 @@
 #' age <- c(21, 29, 27, 29, 24)
 #' test <- data.frame(name, gender, age)
 #' save_to_csv_rds(test, "test")
-save_to_csv_rds <- function(df, output_name, rownames = FALSE){
+save_to_csv_rds <- function(df, output_name){
   # Function to save data frames into CSV and RDS files
-  write.csv(df, paste0(output_name, ".csv"), row.names = rownames)
+  write.csv(df, paste0(output_name, ".csv"))
   saveRDS(df, file=paste0(output_name, ".rds"))
 }
 

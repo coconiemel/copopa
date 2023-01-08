@@ -4,14 +4,12 @@
 \alias{save_to_csv_rds}
 \title{Save data to both CSV and RDS files}
 \usage{
-save_to_csv_rds(df, output_name, rownames = FALSE)
+save_to_csv_rds(df, output_name)
 }
 \arguments{
 \item{df}{dataframe to save as CSV and RDS}
 
 \item{output_name}{name of output file and location}
-
-\item{rownames}{rownames TRUE or FALSE}
 }
 \value{
 CSV and RDS
