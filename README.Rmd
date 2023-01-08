@@ -52,7 +52,7 @@ test <- data.frame(name, gender, age)
 ```{r example}
 
 ## basic example code for multi_check function
-multi_check(test$name, test$gender, test)
+multi_check(test$name, test$gender, test) # fill in "NA" if checking less than three
 
 ## basic example code for mima function
 mima(test$age) # data has to be numeric
