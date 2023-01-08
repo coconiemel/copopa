@@ -1,5 +1,5 @@
 Package: copopa
-Title: Check data type and save into files
+Title: Copopa
 Version: 0.0.0.9000
 Authors@R: 
     person("Coco", "Niemel", , "cocojn@hotmail.com", role = c("aut", "cre"),

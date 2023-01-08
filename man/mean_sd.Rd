@@ -16,6 +16,9 @@ a list
 Calculating mean and standard deviation
 }
 \examples{
-test4 <- c("1", "2", "3")
-mean_sd(test4)
+name <- c("Noa", "Luke", "Oliver", "Anna", "Julie")
+gender <- c("F", "M", "M", "F", "F")
+age <- c(21, 29, 27, 29, 24)
+test <- data.frame(name, gender, age)
+mean_sd(test$age)
 }

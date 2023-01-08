@@ -9,8 +9,11 @@
 #' @importFrom utils write.csv
 #'
 #' @examples
-#' test1 <- data.frame(col1 = c("a", "b", "c"), col2 = c("d", "e", "f"))
-#' save_to_csv_rds(test1, "test1")
+#' name <- c("Noa", "Luke", "Oliver", "Anna", "Julie")
+#' gender <- c("F", "M", "M", "F", "F")
+#' age <- c(21, 29, 27, 29, 24)
+#' test <- data.frame(name, gender, age)
+#' save_to_csv_rds(test, "test")
 save_to_csv_rds <- function(df, output_name, rownames = FALSE){
   # Function to save data frames into CSV and RDS files
   write.csv(df, paste0(output_name, ".csv"), row.names = rownames)

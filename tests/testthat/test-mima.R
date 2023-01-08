@@ -1,4 +1,8 @@
 test_that("mima calculates the minimum and maximum", {
-  test2 <- c("1", "2", "3", "4")
-  mima(test2)
+  name <- c("Noa", "Luke", "Oliver", "Anna", "Julie")
+  gender <- c("F", "M", "M", "F", "F")
+  age <- c(21, 29, 27, 29, 24)
+  test <- data.frame(name, gender, age)
+
+  mima(test$age)
 })

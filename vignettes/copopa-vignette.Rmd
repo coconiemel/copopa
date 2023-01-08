@@ -26,10 +26,10 @@ The package does four things:
 * It simultaniously calculates the minimum and maximum.
 * It simultaniously calculates the mean and standard deviation.
 
-Checking datatypes is done by the "multi_check(x, y, z)" function. Enter target data (and column) as x, y and z and you'll receive a list of types per dataset.
+Checking datatypes is done by the "multi_check(x, y, z)" function. Enter target data as x, y and z and you'll receive a list of types per data set. If you want to check a column of a set enter x$column.
 
-Saving your dataframe is done by the "save_to _csv_rds(df, output_name, rownames = ...)". It requires you to enter the target dataframe, the names of the output new files and to render rownames or not (TRUE or FALSE).
+Saving your data frame is done by the "save_to _csv_rds(df, output_name, rownames = ...)". It requires you to enter the target data frame, the names of the output new files and to render rownames or not (TRUE or FALSE).
 
-Calculating the minimum and maximum is done by the "mima(df) function. Just enter target data en you'll receive a list.
+Calculating the minimum and maximum is done by the "mima(df) function. Just enter target data en you'll receive a list. Data has to be numeric.
 
-Calculating the mean and standard deviation is done by the "mean_sd(df) function. Just enter target data en you'll receive a list.
+Calculating the mean and standard deviation is done by the "mean_sd(df) function. Just enter target data en you'll receive a list. Data has to be numeric.

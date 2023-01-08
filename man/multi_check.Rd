@@ -20,7 +20,9 @@ a list
 Class check of multiple datasets
 }
 \examples{
-test3a <- data.frame(col1 = c("1", "2", "3"), col2 = c("a", "b", "c"))
-test3b <- c("4", "5", "6")
-multi_check(test3a$col1, test3a$col2, test3b)
+name <- c("Noa", "Luke", "Oliver", "Anna", "Julie")
+gender <- c("F", "M", "M", "F", "F")
+age <- c(21, 29, 27, 29, 24)
+test <- data.frame(name, gender, age)
+multi_check(test$name, test$gender, test$age)
 }
